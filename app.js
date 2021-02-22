@@ -12,7 +12,8 @@ app.use(express.static("public"));
 app.get("/", function(req, res)
 {
 
-	res.sendFile(__dirname + "/simple.html" );
+	// res.sendFile(__dirname + "/simple.html" );
+	res.status(200).json({"status": "success"});
 
 
 
